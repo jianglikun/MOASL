@@ -88,6 +88,9 @@ submit in 2023
 
 
 ## concat
-Likun Jiang jianglikun@stu.xmu.edu.cn
-Xiangrong Liu xrliu@xmu.edu.cn
-Xiamen University,Xiamen,China
+Likun Jiang jianglikun@stu.xmu.edu.cn\
+
+Xiangrong Liu xrliu@xmu.edu.cn\
+
+Xiamen University,Xiamen,China\
+
