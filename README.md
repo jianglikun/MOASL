@@ -22,8 +22,9 @@ we introduce MOAEMB (MOAs prediction via embedding extraction), a method that le
 <p align="center"><img src="model.png" alt="logo" width="600px" /></p>
 
 #### prepare data
-Down load the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020)
-Use [cmapPy](https://github.com/cmap/cmapPy) process the L1000 data before you gernerating the dataset by youself, the script as follow:
+Download the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020);
+Use [cmapPy](https://github.com/cmap/cmapPy) process the L1000 data before you gernerating the dataset by youself; 
+the script as follow:
 ```
 # prepare single signature data
 python data/prepare_data_level5.py
@@ -34,7 +35,7 @@ python data/prepare_data_tas_high.py
 # prepare TAS-all data and signle cell data
 python data/prepare_data_tas_all.py
 ```
-Or you can directly use my processed data, download from https://pan.baidu.com/s/1syd05gFX7x4_STb3eVi13w, with code "2023"
+Or you can directly use my processed data, download from https://pan.baidu.com/s/1syd05gFX7x4_STb3eVi13w (verify code 2023)
 
 #### train and test
 ```
