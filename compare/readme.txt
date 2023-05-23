@@ -1,0 +1,1 @@
+For the qualitative evaluation of EMBMOA, we compared the perfor-mance of it with eleven baseline method in three categories in TAS-high data. These including, recently proposed machine learning meth-ods (Drsim, Sigmat and RF), statistical methods combined with biologi-cal experience (GSEA, ssCmap, Xsum and Xcosine) and distance-based methods (L1000CDS, Jaccard and Euclidean). 
