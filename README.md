@@ -2,10 +2,20 @@
 Predicting mechanism of action from transcrip-tional signatures with similarity learning
 
 
-### Dependencies
+## Dependencies package
 
+```
+sklearn
+numpy
+pandas 
+scipy
+pytorch-metric-learning
+h5py
+faiss-gpu
+```
 
-#### prepare data
+### Usage
+## prepare data
 
 you can adownload from
 
