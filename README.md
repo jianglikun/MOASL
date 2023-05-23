@@ -39,12 +39,12 @@ python data/prepare_data_tas_high.py
 python data/prepare_data_tas_all.py
 ```
 
-#### *  **(ii)** train and test
+#### **(ii)** train and test
 ```
 python src/train.py
 ```
 
-#### compare methods 
+#### **(iii)** compare methods 
 ```
 # all compare method script in ./compare
 
@@ -68,7 +68,7 @@ Spearman.py
 
 jaccard.py
 ```
-##### *  **(iii)** downstream analysis
+##### **(iiii)** downstream analysis
 * Figure 2
 ```
 ```
