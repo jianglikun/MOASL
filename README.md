@@ -21,12 +21,12 @@ Predicting mechanism of action from transcrip-tional signatures with similarity 
 we introduce MOAEMB (MOAs prediction via embedding extraction), a method that leverage embedding net and contrastive learning trans-form the signatures with same MOAs into similarity d-dimensional vector of latent feature. In signature embedding space same MOAs are close together and the different are far apart. We evaluate the accura-cy of signature matching with MOAEMB on different TAS data as well as individual cell lines. After compared with several statistical and machine learning techniques, find MOAEMB has a substantial im-provement. 
 <p align="center"><img src="model.png" alt="logo" width="600px" /></p>
 
-#### prepare data
-Download the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020)
+#### * **(i)** prepare data
+Download the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020);
 
 Use [cmapPy](https://github.com/cmap/cmapPy) process the L1000 data before you gernerating the dataset by youself;
 
-Or you can directly use my processed data, download from https://pan.baidu.com/s/1syd05gFX7x4_STb3eVi13w (verify code 2023)
+Or you can directly use my processed data, download from https://pan.baidu.com/s/1syd05gFX7x4_STb3eVi13w (verify code 2023);
 
 ```
 # prepare single signature data
@@ -39,7 +39,7 @@ python data/prepare_data_tas_high.py
 python data/prepare_data_tas_all.py
 ```
 
-#### train and test
+#### *  **(ii)** train and test
 ```
 python src/train.py
 ```
@@ -68,7 +68,7 @@ Spearman.py
 
 jaccard.py
 ```
-##### downstream analysis
+##### *  **(iii)** downstream analysis
 * Figure 2
 ```
 ```
@@ -88,9 +88,9 @@ submit in 2023
 
 
 ## concat
-Likun Jiang jianglikun@stu.xmu.edu.cn\
+Likun Jiang jianglikun@stu.xmu.edu.cn
 
-Xiangrong Liu xrliu@xmu.edu.cn\
+Xiangrong Liu xrliu@xmu.edu.cn
 
-Xiamen University,Xiamen,China\
+Xiamen University,Xiamen,China
 
