@@ -19,7 +19,7 @@ Predicting mechanism of action from transcrip-tional signatures with similarity 
 
 ## Usage 
 we introduce MOAEMB (MOAs prediction via embedding extraction), a method that leverage embedding net and contrastive learning trans-form the signatures with same MOAs into similarity d-dimensional vector of latent feature. In signature embedding space same MOAs are close together and the different are far apart. We evaluate the accura-cy of signature matching with MOAEMB on different TAS data as well as individual cell lines. After compared with several statistical and machine learning techniques, find MOAEMB has a substantial im-provement. 
-<p align="center"><img src="model.png" alt="logo" width="400px" /></p>
+<p align="center"><img src="model.png" alt="logo" width="600px" /></p>
 
 #### prepare data
 Down load the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020)
