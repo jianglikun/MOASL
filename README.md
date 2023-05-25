@@ -71,15 +71,20 @@ jaccard.py
 ##### **(iiii)** downstream analysis
 * ##### Figure 2
 ```
+plot_acc_tas.ipynb
+
 ```
 * ##### Figure 3
 ```
+analysis_drug_demention.ipynb
 ```
 * ##### Figure 4
 ```
+plot_acc_low.ipynb
 ```
 * ##### Figure 5
 ```
+cell_display.ipynb
 ```
 
 ## Citation
