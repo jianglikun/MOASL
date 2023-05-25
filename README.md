@@ -71,6 +71,7 @@ jaccard.py
 ##### **(iiii)** downstream analysis
 * ##### Figure 2
 ```
+# change "experiment_result.xlsx" as suuplymentary_file.xlsx, table=TableS2
 plot_acc_tas.ipynb
 
 ```
@@ -80,6 +81,7 @@ analysis_drug_demention.ipynb
 ```
 * ##### Figure 4
 ```
+# change "experiment_result.xlsx" as suuplymentary_file.xlsx, table=TableS3
 plot_acc_low.ipynb
 ```
 * ##### Figure 5
