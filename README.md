@@ -22,7 +22,7 @@ We present MOASL (MOAs prediction via Similarity Learning), which automatically 
 
 ![image](https://github.com/jianglikun/MOASL/blob/main/model.jpg)
 
-#### * **(i)** prepare data
+#### **(i)** prepare data
 Download the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020);
 
 Use [cmapPy](https://github.com/cmap/cmapPy) process the L1000 data before you gernerating the dataset by youself;
