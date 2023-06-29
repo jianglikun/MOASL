@@ -1,4 +1,4 @@
-## MOAESL
+## MOASL
 MOASL: Prediction of the mechanism of action from transcriptional signature based on similarity learning!
 
 
