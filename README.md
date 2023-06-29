@@ -1,5 +1,5 @@
 ## MOAESL
-MOASL: Prediction of mechanism of action from transcriptional signature based on similarity learning!
+MOASL: Prediction of the mechanism of action from transcriptional signature based on similarity learning!
 
 
 ##  Dependencies package:
@@ -91,7 +91,7 @@ cell_display.ipynb
 ```
 
 ## Citation
-Predicting mechanism of action from transcrip-tional signatures with similarity learning
+MOASL: Prediction of the mechanism of action from transcriptional signature based on similarity learning
 submit in 2023
 
 
