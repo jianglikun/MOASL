@@ -54,6 +54,42 @@ class represent_model(nn.Module):
         h5 = self.encoder[5](h4)
         return  h5
 
+class dropout_model(nn.Module):
+    def __init__(self, hiddensize,gene_num,p):
+        super(dropout_model, self).__init__()
+        self.hiddenSize = hiddensize
+        self.encoder = nn.Sequential(
+            nn.Linear(gene_num, 1024),
+            nn.Tanh(),
+            nn.Dropout(p),
+            nn.Linear(1024, hiddensize),
+            nn.Tanh(),
+            nn.Dropout(p),
+            nn.Linear(512,hiddensize),
+            nn.Tanh()
+        )
+    def forward(self, x):
+        h0 = self.encoder[0](x)
+        h1 = self.encoder[1](h0)
+        h2 = self.encoder[2](h1)
+        h3 = self.encoder[3](h2)
+        h4 = self.encoder[4](h3)
+        # h5 = self.encoder[5](h4)
+        # h6 = self.encoder[6](h5)
+
+        return  h4
+
+def define_drop_model(device,embedding_size,margin,p):
+    model = dropout_model(hiddensize=embedding_size, gene_num=12328,p=p).to(device)
+    optimizer = optim.Adam(model.parameters(), lr=0.00001)
+    distance = distances.CosineSimilarity()
+    reducer = reducers.ThresholdReducer(low=0)
+    loss_func = losses.TripletMarginLoss(margin=margin, distance=distance, reducer=reducer)
+    mining_func = miners.TripletMarginMiner(
+        margin=0.01, distance=distance, type_of_triplets="semihard")
+
+    return model,loss_func,mining_func,optimizer
+
 class relu_model(nn.Module):
     def __init__(self, hiddensize,gene_num):
         super(relu_model, self).__init__()
@@ -76,12 +112,12 @@ class relu_model(nn.Module):
         return h5
 
 
-def define_model(device,embedding_size):
+def define_model(device,embedding_size,margin):
     model = represent_model(hiddensize=embedding_size, gene_num=12328).to(device)
     optimizer = optim.Adam(model.parameters(), lr=0.00001)
     distance = distances.CosineSimilarity()
     reducer = reducers.ThresholdReducer(low=0)
-    loss_func = losses.TripletMarginLoss(margin=0.01, distance=distance, reducer=reducer)
+    loss_func = losses.TripletMarginLoss(margin=margin, distance=distance, reducer=reducer)
     mining_func = miners.TripletMarginMiner(
         margin=0.01, distance=distance, type_of_triplets="semihard")
 
