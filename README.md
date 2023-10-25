@@ -20,7 +20,7 @@ MOASL: Prediction of the mechanism of action from transcriptional signature base
 ## Usage 
 We present MOASL (MOAs prediction via Similarity Learning), which automatically learns similarity embedding among signatures of shared MOAs through contrastive approach. We evaluated the accuracy of signature matching using MOASL on different transcriptional activities score (TAS) datasets as well as diverse cell lines. MOASL offers substantial performance improvements over several statistical and machine learning methods. In addition, we demonstrate the rationale of the model by visualizing the signature annotation procedure, where the query signatures can easily predict the MOAs labels by calculating their similarity to the reference embedding. Finally, we applied MOASL to glucocorticoid receptor (GR) agonist and 8 compounds in top-10 are correctly defined as GR agonist.
 
-![image](https://github.com/jianglikun/MOASL/blob/main/model.jpg)
+![image](https://github.com/jianglikun/MOASL/blob/main/Figure1.jpg)
 
 #### **(i)** prepare data
 Download the L1000 dataset form [CLUE](https://clue.io/data/CMap2020#LINCS2020);
